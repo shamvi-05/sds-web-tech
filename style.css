@@ -1,0 +1,56 @@
+
+body{
+    background-color: rgb(96, 163, 165);
+}
+h1{
+    font-style: normal;
+    font-family: 'DM Sans';
+    font-weight: 900;
+    font-size: 150%;
+    padding-top: 20pt;
+    text-align: center;
+    color: cornsilk;
+}
+.lake
+{
+    padding: 2% 10% 0px 10%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 500px;
+    width:800px;
+    bottom: 200px;
+   
+    box-shadow: 2px 2px 12px rgba(144, 222, 224, 0.87);
+  }
+  /* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; height: auto; }
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+html { font-size:100%; }
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+
